@@ -1,0 +1,2 @@
+#!/bin/bash
+dd bs=256 if=/dev/random count=1 2>/dev/null | base64 | qrencode -t PNG -o - | lpr
